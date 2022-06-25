@@ -42,7 +42,7 @@ public class Exemplo6_ImparPar {
 		int numero = 10; // resultado deve ser "par"
 		int numero2 = 7; // resultado deve ser "Impar"
 		System.out.println((numero % 2 == 1) ? "O numero é Impar " + numero : "O numero é Par " + numero);
-		System.out.println((numero2 % 2 == 1) ? "O numero é Impar " + numero2 : "O numero é Par " + numero2);
+		System.out.println((numero2 % 2 == 1) ? "O numero é Impar " + numero : "O numero é Par " + numero);
 	}
 
 }
