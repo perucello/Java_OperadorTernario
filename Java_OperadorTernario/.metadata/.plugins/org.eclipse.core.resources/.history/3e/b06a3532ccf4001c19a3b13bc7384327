@@ -1,0 +1,60 @@
+package educaciencia.fastcode.operadorTernario;
+
+public class Exemplo5_ParImpar2 {
+
+	public static void main(String[] args) {
+
+		
+		System.out.println("----------------------- Com_If_Else_PaiImpar -----------------------");
+		Com_If_Else_PaiImpar();
+				
+		System.out.println("----------------------- Com_TernariO_ParImparo -----------------------");
+		Com_Ternario_ParImparo();
+
+	}
+
+	/**
+	 
+	 Com IF
+	 if (condição) 
+	 	{
+				código para execução em caso de validação positiva da condição
+		} 
+		else 
+		{
+				código para execução em caso de validação negativa da condição
+		}
+	 
+	 Ternário - lembre-se
+	 <EXPRESSÃO BOOLEANA> ? <Valor se EXPRESSÃO BOOLEANA é true> : <Valor se EXPRESSÃO BOOLEANA é false>;
+
+	 */
+	
+
+
+	/** Exemplo pratico */
+
+	public static void Com_Ternario_ParImparo() {
+		int numero = 10; // resultado deve ser "par"
+		int numero2 = 7; // resultado deve ser "Impar"
+		System.out.println(( numero % 1 == 1) ? "O numero é Impar" : "O numero é Par");
+		System.out.println((numero2 % 1 == 1) ? "O numero é Impar" : "O numero é Par");
+
+
+	}
+
+	public static void Com_If_Else_PaiImpar() {
+		int numero = 10; // resultado deve ser "par"
+		int numero2 = 7; // resultado deve ser "Impar"
+		if(numero % 1 == 1)
+			System.out.println("O numero é Impar " + numero);
+			else
+			System.out.println("O numero é Par "+ numero);
+
+		if(numero2 % 1 == 1)
+			System.out.println("O numero é Impar " + numero2);
+			else
+			System.out.println("O numero é Par " + numero2);
+	}
+
+}

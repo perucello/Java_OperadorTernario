@@ -1,0 +1,40 @@
+package educaciencia.fastcode.operadorTernario;
+
+public class Exemplo1 {
+
+	public static void main(String[] args) {
+		ComTernario();
+		ComIF();
+	}
+
+	public static void ComTernario() {
+		/**
+		 * <EXPRESSÃO BOOLEANA> ? <Valor se EXPRESSÃO BOOLEANA é true> : <Valor se
+		 * EXPRESSÃO BOOLEANA é false>;
+		 */
+		int a = 10;
+		int b = (a == 1) ? 20 : 30;
+		System.out.println("ComTernario - Valor de b: " + b);
+
+		b = (a == 10) ? 20 : 30;
+		System.out.println("ComTernario - Valor de b: " + b);
+	}
+
+	public static void ComIF() {
+		int a = 10;
+		int b = 30;
+
+		if (a == 1) {
+			System.out.println("ComIF Valor de b: 20");
+		} else {
+			System.out.println("ComIFValor de b: 30");
+		}
+
+		if (a == 10) {
+			System.out.println("ComIF Valor de b: 20");
+		} else {
+			System.out.println("ComIFValor de b: 30");
+		}
+
+	}
+}

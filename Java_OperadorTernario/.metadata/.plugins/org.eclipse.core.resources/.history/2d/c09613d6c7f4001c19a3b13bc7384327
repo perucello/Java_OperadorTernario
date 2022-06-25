@@ -1,0 +1,35 @@
+package educaciencia.fastcode.operadorTernario;
+
+public class Exemplo3_estoque {
+
+	public static void main(String[] args) {
+
+		System.out.println("----------------------- estoque_ifElse -----------------------");
+		estoque_ifElse();
+		System.out.println("----------------------- estoque_Ternario -----------------------");
+		estoque_Ternario();
+
+	}
+
+	/** Explicando Expressão ternária de maneira simples */
+	public static void estoque_ifElse() {
+
+		int estoque = 100;
+		if (estoque > 99) {
+			System.out.println("Estoque OK");
+		} else {
+			System.out.println("Estoque abaixando");
+		}
+
+	}
+
+	public static void estoque_Ternario() {
+		/**
+		 * Sintaxe do operador ternário: (expressão booleana) ? código 1 : código 2;
+		 */
+		int estoque = 100;
+		System.out.println(estoque > 99 ? "Estoque OK !" : "Estoque abaixando");
+
+	}
+
+}

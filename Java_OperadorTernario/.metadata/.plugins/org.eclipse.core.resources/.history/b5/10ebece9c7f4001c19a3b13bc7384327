@@ -1,0 +1,70 @@
+package educaciencia.fastcode.operadorTernario;
+
+public class Exemplo4_ParImpar {
+
+	public static void main(String[] args) {
+
+		
+		System.out.println("----------------------- salarioAcrescimo_IfElse -----------------------");
+		salarioAcrescimo_IfElse();
+		
+		
+		System.out.println("----------------------- salarioAcrescimo_Ternario -----------------------");
+		salarioAcrescimo_Ternario();
+
+	}
+
+	/**
+	 
+	 Com IF
+	 if (condição) 
+	 	{
+				código para execução em caso de validação positiva da condição
+		} 
+		else 
+		{
+				código para execução em caso de validação negativa da condição
+		}
+	 
+	 Ternário - lembre-se
+	 <EXPRESSÃO BOOLEANA> ? <Valor se EXPRESSÃO BOOLEANA é true> : <Valor se EXPRESSÃO BOOLEANA é false>;
+
+	 */
+	
+
+
+	/** Exemplo pratico */
+
+	public static void salarioAcrescimo_IfElse() {
+		// double salario = 1000;
+		double salario = 900;
+		double bonus = 0;
+		double total;
+
+		if (salario > 1000) {
+			bonus = salario * 0.10;
+			total = salario + bonus;
+		} else {
+			bonus = salario * 0.15;
+			total = salario + bonus;
+		}
+
+		System.out.println("Valor Salario: R$ " + salario);
+		System.out.println("Valor Bonus: R$ " + bonus);
+		System.out.println("Valor Total: R$ " + total);
+
+	}
+
+	public static void salarioAcrescimo_Ternario() {
+		// double salario = 1000;
+		double salario = 900;
+
+		double bonus = salario * (salario > 1000 ? 0.10 : 0.15);
+		double total = salario + bonus;
+
+		System.out.println("Valor Salario: R$ " + salario);
+		System.out.println("Valor Bonus: R$ " + bonus);
+		System.out.println("Valor Total: R$ " + total);
+	}
+
+}

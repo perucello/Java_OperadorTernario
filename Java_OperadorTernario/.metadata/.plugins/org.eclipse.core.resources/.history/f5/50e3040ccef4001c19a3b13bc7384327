@@ -1,0 +1,48 @@
+package educaciencia.fastcode.operadorTernario;
+
+public class Exemplo2_mediaAluno {
+
+	public static void main(String[] args) {
+	
+		System.out.println("----------------------- Com_If_Else -----------------------");
+		Com_If_Else();
+	
+		System.out.println("----------------------- Com_Ternario -----------------------");
+		Com_Ternario();
+
+	}
+
+	/**
+	 
+	 Com IF
+	 if (condição) 
+	 	{
+				código para execução em caso de validação positiva da condição
+		} 
+		else 
+		{
+				código para execução em caso de validação negativa da condição
+		}
+	 
+	 Ternário - lembre-se
+	 <EXPRESSÃO BOOLEANA> ? <Valor se EXPRESSÃO BOOLEANA é true> : <Valor se EXPRESSÃO BOOLEANA é false>;
+
+	 */
+	
+
+	public static void Com_If_Else() {
+		int nota = 6;
+	    if (nota <= 5) {
+	        System.out.println("Reprovado.");
+	    } else {
+	        System.out.println("Aprovado!");
+	    }
+	}
+	
+	
+	public static void Com_Ternario() {
+		int nota = 5;
+	    System.out.println((nota <= 5 ) ? "Reprovado" : "Aprovado!");	    
+	}
+
+}
